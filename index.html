@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Image Encryption and Decryption</h1>
+        <input type="file" id="imageInput">
+        <button id="encryptButton">Encrypt Image</button>
+        <button id="decryptButton" disabled>Decrypt Image</button>
+        <img id="originalImage" src="" alt="Original Image">
+        <img id="encryptedImage" src="" alt="Encrypted Image" style="display:none;">
+        <img id="decryptedImage" src="" alt="Decrypted Image" style="display:none;">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
